@@ -1,7 +1,9 @@
+import { plusImg, minusImg } from "./src";
+
 export const clickItem = (item) => {
   const paragraph = item.querySelector("p");
   const img = item.querySelector('img')
-  img.src = 'src/assets/images/icon-minus.svg'
+  img.src = minusImg
   paragraph.classList.toggle("active");
 };
 
@@ -9,7 +11,7 @@ export const allItemsClose = (listItems) => {
   listItems.forEach((item) => {
     const paragraph = item.querySelector("p");
     const img = item.querySelector('img')
-    img.src = 'src/assets/images/icon-plus.svg'
+    img.src = plusImg
     paragraph.classList.remove("active");
   });
 };
