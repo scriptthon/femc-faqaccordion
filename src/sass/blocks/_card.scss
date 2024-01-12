@@ -1,16 +1,17 @@
-
 ul {
   list-style: none;
 }
 
 hr {
   border-color: var(--Light-pink);
+  opacity: .5;
 }
 
 .card {
   background-color: var(--White);
   padding: 40px;
   border-radius: 15px;
+  box-shadow: 0px 10px 50px var(--Grayish-purple);
 
 
   &__title {
